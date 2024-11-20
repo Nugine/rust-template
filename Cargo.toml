@@ -1,0 +1,18 @@
+[package]
+name = "rust-template"
+version = "0.0.0"
+edition = "2021"
+description = "Rust library template"
+license = "MIT"
+repository = "https://github.com/Nugine/rust-template"
+readme = "README.md"
+documentation = "https://docs.rs/rust-template"
+categories = ["rust-patterns"]
+keywords = ["template"]
+publish = false
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[dependencies]
