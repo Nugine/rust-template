@@ -11,6 +11,15 @@ categories = ["rust-patterns"]
 keywords = ["template"]
 publish = false
 
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+# deny
+all = { level = "deny", priority = -1 }
+pedantic = { level = "deny", priority = -1 }
+cargo = { level = "deny", priority = -1 }
+
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]

@@ -4,8 +4,8 @@
 
 |               Toolchain               | Version |
 | :-----------------------------------: | :-----: |
-|      [Rust](https://rustup.rs/)       | ^1.78.0 |
-| [just](https://github.com/casey/just) | ^1.36.0 |
+|      [Rust](https://rustup.rs/)       | ^1.87.0 |
+| [just](https://github.com/casey/just) | ^1.21.0 |
 
 ## Workflow
 

@@ -7,7 +7,7 @@ fmt *ARGS:
     cargo fmt --all {{ARGS}}
 
 lint *ARGS:
-    cargo clippy --all-features --tests --benches {{ARGS}}
+    cargo clippy --all-targets --all-features {{ARGS}}
 
 test *ARGS:
     cargo test --all-features {{ARGS}}

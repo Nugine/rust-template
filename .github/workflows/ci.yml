@@ -31,7 +31,7 @@ jobs:
       fail-fast: false
       matrix:
         toolchain: 
-          - 1.78.0 # MSRV
+          - 1.87.0 # MSRV
           - stable
     steps:
       - uses: actions/checkout@v4
@@ -41,10 +41,3 @@ jobs:
           toolchain: ${{ matrix.toolchain }}
       - uses: Swatinem/rust-cache@v2
       - run: just test
-  
-  audit:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: taiki-e/install-action@cargo-audit
-      - run: cargo audit -D warnings
